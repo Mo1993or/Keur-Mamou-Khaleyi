@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CartService } from 'src/app/core/services/cart.service';
 import { Product } from 'src/app/modules/product/model';
 
@@ -7,7 +8,7 @@ import { Product } from 'src/app/modules/product/model';
   selector: 'app-cartitem',
   templateUrl: './cartitem.component.html',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   styles: [
   ]
 })
