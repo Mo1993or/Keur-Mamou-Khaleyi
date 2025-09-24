@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { CartService } from 'src/app/core/services/cart.service';
 import { Product } from '../../model';
 import { Order } from '../../model/Product.model';
-import { ShippingForm } from './model/ShippingForm.model';
 
 
 
