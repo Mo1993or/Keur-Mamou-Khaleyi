@@ -46,8 +46,8 @@ export class CheckoutComponent implements OnInit{
   isLoading = false;
   constructor(private cartService:CartService, private formBulider:FormBuilder){
     this.shippingForm=this.formBulider.group({
-      firstName:new FormControl('', [Validators.required, Validators.minLength(3),Validators.maxLength(15)]),
-      lastName:new FormControl('', [Validators.minLength(3),Validators.maxLength(15)]),
+      firstName:new FormControl('', [Validators.required, Validators.minLength(1),Validators.maxLength(15)]),
+      lastName:new FormControl('', [Validators.minLength(1),Validators.maxLength(15)]),
       email:new FormControl('',[Validators.required,Validators.email]),
       mobile:new FormControl('',[Validators.required,Validators.minLength(10)]),
       address:new FormControl('',[Validators.required]),
