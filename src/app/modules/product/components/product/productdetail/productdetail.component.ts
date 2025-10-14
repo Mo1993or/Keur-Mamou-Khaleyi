@@ -62,7 +62,6 @@ export class ProductdetailComponent implements OnInit{
     //   }};
     this.isLoading=true;
     const id= this.route.snapshot.params['id'];
-    console.log("iddd ",id)
     this.productService.getProduct(id).subscribe((data:Product)=>{
      this.isLoading=false;
       this.product=data;

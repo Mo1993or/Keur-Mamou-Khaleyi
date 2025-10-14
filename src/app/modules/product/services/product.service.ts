@@ -18,7 +18,6 @@ export class ProductService {
 
   get get():Observable<Product[]|any>{
     return this.http.get<{[key:string]:Product}>(this.url).pipe(map((data)=>{
-      console.log("dataaa ", data);
       let newProducts:Product[]=[];
       for(const key in data){
         newProducts.push({...data[key]})
@@ -32,11 +31,9 @@ export class ProductService {
   }
   getByCategory(category:string):Observable<Product[]|any>{
     return this.http.get<ProductAll>(this.url+'/category/'+category).pipe(map((data)=>{
-      console.log("dataaaeee newProducts", data.data);
       let newProductss:Product[]=[];
       let newProducts:Product[]=[];
        newProductss = data.data;
-      console.log("dataaaeee newProductsnewProductss", data.data);
       data['data'].forEach(element => {
         newProducts.push(element)
         

@@ -107,8 +107,6 @@ export class CheckoutComponent implements OnInit{
 
     this.cart = this.cartService.getCart;
     
-    console.log("JSON.stringify(this.shippingForm.value) $", JSON.stringify(this.shippingForm.value));
-    console.log("tesssttt $", this.cart);
     
    
     
@@ -126,8 +124,7 @@ export class CheckoutComponent implements OnInit{
       totalAmount = totalAmount + this.calculerTotal(commande);
       this.items.push(commande);
     });
-    console.log("tesssttt commande", this.items);
-    console.log("tesssttt totalAmount", totalAmount);
+  
 
     var data = {
       "items": this.items,
@@ -140,12 +137,10 @@ export class CheckoutComponent implements OnInit{
         "email": this.shippingForm.value.email
       }
     }
-    console.log("tesssttt data", data);
     this.isLoading = true;
   
     this.cartService.submitOrder(data).subscribe(
       (response) => {
-        console.log(response);
         this.isLoading = false;
         
         alert("Votre commande a été bien prise en compte. Nous vous contacterons dans les meilleurs délais");
