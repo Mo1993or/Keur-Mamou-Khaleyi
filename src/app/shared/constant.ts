@@ -40,10 +40,10 @@ export const MENU:{
         title:'Accéssoires',
         path:'/categories/accessoire'
     },
-    // {
-    //     title:'Contact',
-    //     path:'/categories/Beverages'
-    // },
+    {
+        title:'Coffrets',
+        path:'/categories/Coffrets'
+    },
     // {
     //     title:'Electronics',
     //     path:'/categories/Electronics'
