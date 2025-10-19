@@ -171,7 +171,7 @@ export class HomeComponent implements OnInit{
     this._productService.get.subscribe(data=>{
       this.isLoading=false;
       this.productsFilter=data;
-      this.products = this.productsFilter.slice(this.productsFilter.length - 12,this.productsFilter.length)
+      this.products = this.productsFilter.slice(-12);
     },
     error=>this.error=error.message
     );
