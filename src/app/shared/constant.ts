@@ -25,25 +25,41 @@ export const MENU:{
         path:'/'
     },
     {
-        title:'Garçon',
-        path:'/categories/Garcon'
+        title:'Puériculture',
+        path:'/categories/Puericulture'
     },
     {
-        title:'Fille',
-        path:'/categories/Fille'
+        title:'Chambre',
+        path:'/categories/Chambre'
     },
     {
-        title:'Jouets',
-        path:'/categories/Jouet'
+        title:'Vêtement',
+        path:'/categories/Vetement'
     },
     {
-        title:'Accéssoires',
-        path:'/categories/accessoire'
+        title:'Chaussure',
+        path:'/categories/Chaussure'
     },
     {
-        title:'Coffrets',
-        path:'/categories/Coffrets'
+        title:'Hygiène & Soin',
+        path:'/categories/Hygiene et Soin'
     },
+    {
+        title:'Jouet & cadeaux',
+        path:'/categories/Jouet et cadeaux'
+    },
+    {
+        title:'Maman',
+        path:'/categories/Maman'
+    },
+    {
+        title:'Scolaire',
+        path:'/categories/Scolaire'
+    },
+    {
+        title:'Repas Bébé',
+        path:'/categories/Repas Bebe'
+    }
     // {
     //     title:'Electronics',
     //     path:'/categories/Electronics'
