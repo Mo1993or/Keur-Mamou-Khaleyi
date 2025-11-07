@@ -1,5 +1,5 @@
-<div class="relative flex flex-row justify-between mx-auto md:flex-col w-full max-w-md bg-white hover:border border-gray-300">
-        <a [routerLink]="['/categories','product',product._id]" class="w-[50%] sm:w-[40%] md:w-full overflow-hidden">
+<div class="relative flex flex-row justify-between mx-auto md:flex-col w-full max-w-md bg-white hover:border border-gray-300 " [ngStyle]="{'height': '80%', 'width': 'auto'}">
+        <a [routerLink]="['/categories','product',product._id]"  class="w-[50%] sm:w-[40%] md:w-full overflow-hidden">
             <img 
             [ngClass]="{'rounded-t-lg transition-all duration-500 hover:scale-110 grayscale':product.stock!='disponible',
             'rounded-t-lg transition-all duration-500 hover:scale-110':product.stock=='disponible'}" 
